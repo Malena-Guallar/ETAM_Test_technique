@@ -1,8 +1,68 @@
 @font-face {
-    font-family: "Baton Turbo";
-    src: url('./assets/fonts/Baton_Turbo_Regular.otf');
-}   
+  font-family: "Baton Turbo";
+  src: url("./assets/fonts/Baton_Turbo_Regular.otf");
+}
 
 body {
-    font-family: "Baton Turbo"
+  font-family: "Baton Turbo";
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.first-slot {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.div-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.text-wrapper {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.title {
+  font-size: 150%;
+}
+
+.content {
+  width: 90%;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 0.6em;
+  width: 18em;
+  border-radius: 2px;
+  font-size: 70%;
+}
+
+.arrow {
+  margin-top: 30px;
+}
+
+.arrow-text {
+  padding: 10px;
+}
+
+.img_lp_personal_shopping {
+  width: 100%;
 }

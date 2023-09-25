@@ -11,10 +11,6 @@ body {
   height: 100vh;
 }
 
-img {
-  max-width: 100%;
-}
-
 .first-slot {
   height: 100vh;
   display: flex;
@@ -27,13 +23,12 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .text-wrapper {
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -65,4 +60,56 @@ img {
 
 .img_lp_personal_shopping {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .image:nth-child(1) {
+    opacity: 0;
+  }
+
+  .image:nth-child(2) {
+    content: url("assets/images/floating-bar.png");
+  }
+
+  .image:nth-child(3) {
+    content: url("assets/images/NavBar_web.png");
+  }
+
+  body {
+    margin: 0;
+    border: solid pink 2px;
+    width: 100%;
+  }
+
+  .img_lp_personal_shopping {
+    position: absolute;
+    width: 50%;
+    top: 140px;
+    left: 0;
+  }
+
+  .div-wrapper {
+    display: flex;
+  }
+
+  .text-wrapper {
+    display: flex;
+    position: absolute;
+    width: 30%;
+    top: 250px;
+    right: 150px;
+    height: 50%;
+  }
+
+  .button {
+    margin-top: 30px;
+    padding: 15px;
+  }
+
+  .arrow {
+    position: absolute;
+    border: solid lime 2px;
+    top: 700px;
+    right: 280px;
+  }
 }

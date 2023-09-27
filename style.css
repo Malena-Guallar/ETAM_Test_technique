@@ -7,6 +7,8 @@ body {
   font-family: "Baton Turbo";
   margin: 0;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -26,6 +28,41 @@ body {
 .arrow-text {
   padding: 10px;
 }
+
+.card-01, .card-02, .card-03 {
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.card-01 {
+  background-color: #FFEC85;
+}
+
+.card-02 {
+  background-color: #FFAEA3;
+}
+
+.card-03 {
+  background-color: #FAD7E5;
+}
+
+.card-logo {
+  width: 10%;
+}
+
+.rdv-text {
+  font-size: 60%
+}
+
+.card-button {
+  border : black solid 1px;
+  background: none;
+  border-radius: 3px;
+  font-size: 70%;
+  padding: 8px 30px;;
+}
+
 
 @media screen and (max-width: 768px) {
   .first-slot {
@@ -55,8 +92,9 @@ body {
   }
 
   .card-01, .card-02, .card-03 {
-    border: solid lime 1px;
+
   }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -73,7 +111,7 @@ body {
   }
 
   .first-slot {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -116,6 +154,27 @@ body {
 
   .arrow {
     grid-area: arrow;
-    align-self: start;
+    align-self: center;
+  }
+
+  .second-slot-desk {
+    margin: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-slot-title {
+    margin-left: 30px;
+  }
+
+  .cards-row {
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card-01, .card-02, .card-03 {
+    width: 30%
   }
 }

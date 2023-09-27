@@ -5,39 +5,14 @@
 
 body {
   font-family: "Baton Turbo";
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   margin: 0;
   height: 100vh;
 }
 
-.first-slot {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.div-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .title {
   font-size: 150%;
-}
-
-.content {
-  width: 90%;
 }
 
 .button {
@@ -50,21 +25,43 @@ body {
   font-size: 70%;
 }
 
-.arrow {
-  margin-top: 30px;
-}
+
 
 .arrow-text {
   padding: 10px;
 }
 
-.img_lp_personal_shopping {
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .first-slot {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img_lp_personal_shopping {
+    width: 100%;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .arrow {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .image:nth-child(1) {
-    opacity: 0;
+    display: none;
   }
 
   .image:nth-child(2) {
@@ -75,41 +72,50 @@ body {
     content: url("assets/images/NavBar_web.png");
   }
 
-  body {
-    margin: 0;
-    border: solid pink 2px;
-    width: 100%;
-  }
-
-  .img_lp_personal_shopping {
-    position: absolute;
-    width: 50%;
-    top: 140px;
-    left: 0;
+  .first-slot {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   .div-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "image ."
+      "image ."
+      "image content"
+      "image button"
+      "image arrow"
   }
 
-  .text-wrapper {
-    display: flex;
-    position: absolute;
-    width: 30%;
-    top: 250px;
-    right: 150px;
-    height: 50%;
+  .img_lp_personal_shopping {
+    grid-area: image;
+  }
+
+  .title {
+    grid-area: content;
+    font-size: 150%;
+  }
+
+  .content {
+    grid-area: content;
+    align-self: end;
+    justify-self: center;
+    width: 55%;
+    font-size: 90%;
   }
 
   .button {
-    margin-top: 30px;
-    padding: 15px;
+    grid-area: button;
+    justify-self: center;
+    height: 30%;
   }
 
   .arrow {
-    position: absolute;
-    border: solid lime 2px;
-    top: 700px;
-    right: 280px;
+    grid-area: arrow;
+    align-self: start;
   }
 }

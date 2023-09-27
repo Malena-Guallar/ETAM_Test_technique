@@ -5,8 +5,6 @@
 
 body {
   font-family: "Baton Turbo";
-  /* display: flex; */
-  /* justify-content: center; */
   margin: 0;
   height: 100vh;
 }
@@ -24,8 +22,6 @@ body {
   border-radius: 2px;
   font-size: 70%;
 }
-
-
 
 .arrow-text {
   padding: 10px;
@@ -56,6 +52,10 @@ body {
 
   .arrow {
     margin-top: 30px;
+  }
+
+  .card-01, .card-02, .card-03 {
+    border: solid lime 1px;
   }
 }
 
@@ -88,7 +88,7 @@ body {
       "image ."
       "image content"
       "image button"
-      "image arrow"
+      "image arrow";
   }
 
   .img_lp_personal_shopping {

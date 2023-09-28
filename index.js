@@ -25,12 +25,12 @@ let items = document.querySelectorAll(".qa-row").forEach((item) => {
   let content = item.querySelector(".qa-content");
 
   button.addEventListener("click", function showDetails() {
-    if (content.style.display === "none" || content.style.display === "") {
-      content.style.display = "block";
-      button.innerHTML = "︿";
-    } else {
-      content.style.display = "none";
+    if (content.classList.contains("visible")) {
+      content.classList.remove("visible");
       button.innerHTML = "﹀";
+    } else {
+      content.classList.add("visible");
+      button.innerHTML = "︿";
     }
   });
 });

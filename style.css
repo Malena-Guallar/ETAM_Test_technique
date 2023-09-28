@@ -76,6 +76,15 @@ body {
   margin-right: 20px;
 }
 
+.title-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.qa-content {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .first-slot {
     height: 100vh;

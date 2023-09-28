@@ -20,20 +20,17 @@ const updateLayout = () => {
 };
 updateLayout();
 
-let contentArray = document.querySelectorAll(".qa-content");
+let items = document.querySelectorAll(".qa-row").forEach((item) => {
+  let button = item.querySelector("#toggleButton");
+  let content = item.querySelector(".qa-content");
 
-let buttons = document
-  .querySelectorAll(".open-close-arrow")
-  .forEach((button, index) => {
-    button.addEventListener("click", function showDetails() {
-      let content = contentArray[index];
-
-      if (content.style.display === "none" || content.style.display === "") {
-        content.style.display = "block";
-        button.innerHTML = "︿";
-      } else {
-        content.style.display = "none";
-        button.innerHTML = "﹀";
-      }
-    });
+  button.addEventListener("click", function showDetails() {
+    if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+      button.innerHTML = "︿";
+    } else {
+      content.style.display = "none";
+      button.innerHTML = "﹀";
+    }
   });
+});

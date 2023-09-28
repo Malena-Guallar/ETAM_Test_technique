@@ -65,6 +65,17 @@ body {
   padding: 8px 30px;
 }
 
+.content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.number {
+  font-size: 200%;
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .first-slot {
     height: 100vh;
@@ -97,7 +108,7 @@ body {
   }
 
   .controls {
-    position: absolute; 
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -108,6 +119,33 @@ body {
     border: none;
     background: none;
     font-size: 200%;
+  }
+
+  .third-slot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .third-slot-image {
+    width: 100%;
+  }
+
+  .third-slot-content {
+    background-color: #fad7e5;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    justify-content: center;
+  }
+
+  .third-slot-title {
+    text-align: center;
+  }
+
+  .content-row {
+    display: flex;
+    height: 5em;
   }
 }
 
@@ -192,5 +230,38 @@ body {
   .card-02,
   .card-03 {
     width: 30%;
+  }
+
+  .third-slot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "content image";
+  }
+
+  .third-slot-image {
+    grid-area: image;
+    width: 100%;
+  }
+
+  .third-slot-content {
+    background-color: #fad7e5;
+    grid-area: content;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 10px 30px;
+  }
+
+  .third-slot-title {
+    text-align: center;
+    font-size: 200%;
+  }
+
+  .content-row {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    margin: 1% 0
   }
 }

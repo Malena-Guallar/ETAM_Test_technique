@@ -12,13 +12,14 @@ const updateLayout = () => {
   const glideCarousel = document.querySelector(".second-slot-mob");
   const cardsRow = document.querySelector(".second-slot-desk");
 
-  if (screenWidth <= 768) {
+  if (screenWidth < 768) {
     cardsRow.style.display = "none";
   } else {
     glideCarousel.style.display = "none";
   }
 };
 updateLayout();
+
 
 let items = document.querySelectorAll(".qa-row").forEach((item) => {
   let button = item.querySelector("#toggleButton");

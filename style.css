@@ -27,6 +27,7 @@ body {
   width: 18em;
   border-radius: 2px;
   font-size: 70%;
+  cursor: pointer; 
 }
 
 .arrow-text {
@@ -69,6 +70,7 @@ body {
   border-radius: 3px;
   font-size: 70%;
   padding: 8px 30px;
+  cursor: pointer; 
 }
 
 /** THIRD SLOT **/
@@ -105,6 +107,8 @@ body {
 .open-close-arrow {
   background: none;
   border: none;
+  cursor: pointer; 
+
 }
 
 /** MOBILE **/
@@ -185,6 +189,10 @@ body {
   .content-row {
     display: flex;
     height: 5em;
+  }
+
+  .card-01, .card-02, .card-03 {
+    height: 430px 
   }
 
   /** FOURTH SLOT **/
@@ -359,5 +367,9 @@ body {
     font-size: 80%;
     width: 75%;
     margin: 0;
+  }
+
+  .open-close-arrow {
+    margin-right: 30px;
   }
 }

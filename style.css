@@ -15,11 +15,11 @@ body {
 
 /** FIRST SLOT **/
 
-.title {
+.first-slot-title {
   font-size: 150%;
 }
 
-.button {
+.first-slot-button {
   background-color: black;
   border: none;
   color: white;
@@ -134,11 +134,11 @@ body {
     width: 100%;
   }
 
-  .content {
+  .first-slot-content {
     width: 90%;
   }
 
-  .arrow {
+  .first-slot-arrow {
     margin-top: 30px;
   }
 
@@ -258,12 +258,12 @@ body {
     grid-area: image;
   }
 
-  .title {
+  .first-slot-title {
     grid-area: content;
     font-size: 150%;
   }
 
-  .content {
+  .first-slot-content {
     grid-area: content;
     align-self: end;
     justify-self: center;
@@ -271,13 +271,13 @@ body {
     font-size: 90%;
   }
 
-  .button {
+  .first-slot-button {
     grid-area: button;
     justify-self: center;
     height: 30%;
   }
 
-  .arrow {
+  .first-slot-arrow {
     grid-area: arrow;
     align-self: center;
   }

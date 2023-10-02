@@ -21,9 +21,9 @@ const updateLayout = () => {
 updateLayout();
 
 
-let items = document.querySelectorAll(".qa-row").forEach((item) => {
-  let button = item.querySelector("#toggleButton");
-  let content = item.querySelector(".qa-content");
+const items = document.querySelectorAll(".qa-row").forEach((item) => {
+  const button = item.querySelector("#toggleButton");
+  const content = item.querySelector(".qa-content");
 
   button.addEventListener("click", function showDetails() {
     if (content.classList.contains("visible")) {
